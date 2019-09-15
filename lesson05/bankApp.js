@@ -8,7 +8,8 @@ do {
       break;
     case usr.toLowerCase() === 'w':
       amt = prompt('How much would you like to withdraw?')
-      if (Number.isNaN(amt)) {
+      newTotal = Number(amt);
+      if (Number.isNaN(newTotal)) {
         alert('Please enter a real number.');
         break;
       }
